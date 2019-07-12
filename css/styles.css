@@ -13,13 +13,25 @@ ul { padding-left: 1.4em; list-style:square; }
 q:before, q:after { content:''; }
 /* Reset CSS ----*/
 
-h1 {
-  font-weight: bold;
+* {
+  font-family: Arial,sans-serif,verdana;
 }
 
-h3 {
+h1 {
   font-weight: bold;
-  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 13.5px;
+  color: black;
+  margin-top: 15px;
+}
+
+h4 span {
+  color: gray;
+  font-size: 0.8em;
 }
 
 li {
@@ -116,6 +128,11 @@ li {
   width: 80px;
   height: 81px;
 }
+
+.comment_text {
+  font-size: 14px;
+  margin-top: 5px;
+}
 /*Ids*/
 
 #recommended {
@@ -135,7 +152,6 @@ li {
   background-color: white;
   margin: 0;
   overflow: auto;
-  /*border: 1px solid black;*/
   border-bottom: solid #f2f2f2;
 }
 
