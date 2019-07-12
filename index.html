@@ -4,25 +4,58 @@
 		<meta charset="utf-8">
 		<title>Embedding Images</title>
 		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<section id = "navbar">
-			<ul>
-				<li><a class="active" href="element1.html"> Element 1</a></li>
-				<li><a href="element2.html"> Element 2</a></li>
-				<li><a href="element3.html"> Element 3</a></li>
-				<li><a href="element4.html"> Element 4</a></li>
-			</ul>
-		</section>
+		<!-- First conteiner -->
+		<div class="nav_bar_conteiner">
+			<div>
+				<img src="youtube_logo.png" alt="Image not found" width="32" height="22">
+			</div>
 
-		<section id="video_player">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/5__1PofM-gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</section>
+			<div id="submit">
+				<span>
+					<div id="search_input">
+						<input type="text" placeholder="Search" size="100">
+					</div>
+					<input type="submit" value="Search!">
+				</span>
+			</div>
 
-		<section id="recomendations">
+			<div class="in_one_line">
+				<div>
+					<a href="#">Subir</a>
+				</div>
+				<div class="separation">
+					<a href="#">Descargar</a>
+				</div>
+			</div>
+		</div>
 
-		</section>
+		<!-- Video conteiner -->
+		<div class="video_conteiner">
+			<div id="video_player">
+				<iframe width="1024px" height="576.06px" src="https://www.youtube.com/embed/osSJhXruEzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h1>Title</h1>
+				<div class="">
+					<input type="text" placeholder="Enter your comment...">
+					<br></br>
+				</div>
+				<div class="comment">
+					<article>
+						<img src="youtube_logo.png" alt="Not found" width="30" height="21.5px">
+						<h3>Comments: </h3>
+						<p>This is a the first comment</p>
+					</article>
+				</div>
+			</div>
 
+			<div id="recommended">
+				<img src="youtube_logo.png" alt="image not found" class="same_size_img">
+				<img src="youtube_logo.png" alt="image not found" class="same_size_img">
+				<img src="youtube_logo.png" alt="image not found" class="same_size_img">
+			</div>
+		</div>
 
 
 	</body>
