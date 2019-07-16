@@ -22,6 +22,10 @@ h1 {
   margin-top: 20px;
 }
 
+h3 {
+  color: gray;
+}
+
 h4 {
   font-weight: bold;
   font-size: 13.5px;
@@ -139,6 +143,28 @@ li {
 .main_section {
   display: flex;
   flex-direction: row;
+}
+
+.views_and_likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.upload_user {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.user_icon {
+  width: 500px;
+  height: 80px;
+}
+
+.subscribe {
+  width: 1000px;
+  height: 45px;
 }
 
 /*Ids*/
