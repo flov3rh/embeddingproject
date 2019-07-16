@@ -75,6 +75,7 @@ li {
 .comment {
   border-top: 1px solid black;
   padding-top: 10px;
+  margin-top: 50px;
 }
 
 .inline {
@@ -139,6 +140,7 @@ li {
   display: flex;
   flex-direction: row;
 }
+
 /*Ids*/
 
 #recommended {
