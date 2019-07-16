@@ -100,7 +100,7 @@ li {
 
 .same_size_img {
   width: 380px;
-  height: 140px;
+  height: 120px;
 }
 
 .margin_top {
@@ -154,7 +154,7 @@ li {
 .upload_user {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  justify-content: space-between;
 }
 
 .user_icon {
