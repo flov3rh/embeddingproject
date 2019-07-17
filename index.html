@@ -1,62 +1,182 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
+  <head>
 		<meta charset="utf-8">
 		<title>Embedding Images</title>
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/styles.css"/>
+    <link rel="icon" href="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<!-- First conteiner -->
-		<div class="nav_bar_conteiner">
-			<div>
-				<img src="youtube_logo.png" alt="Image not found" width="32" height="22">
-			</div>
+    <div class="flex_container">
+      <nav id="nav_bar">
+        <ul>
+          <li id="bars">
+            <img src="img/bars.png" alt="Bars">
+          </li>
+          <li>
+            <img id="youtube_logo" src="img/youtube_logo.png" alt="Youtube logo">
+          </li>
+          <li id="search_submit_nav"><input type="text" placeholder="Search" id="search_field"/> <button id="button" type="button" name="button"><img src="img/search.png" alt="Not found"></button></li>
+          <li class="right_top" id="menu"><img src="img/profile_icon.png" alt="Profile picture" width="32" height="32"/></li>
+          <li class="right_top" id="notifications"><img src="img/notifications.png" alt="Not found" width="32" height="32"/></li>
+          <li class="right_top" id="messages"><img src="img/messages.png" alt="Not found" width="32" height="32"/></li>
+          <li class="right_top" id="apps"><img src="img/apps.png" width="32" alt="Not found" height="32"/></li>
+          <li class="right_top" id="upload"><img src="img/upload.png" width="32" alt="Not found" height="32"/></li>
+        </ul>
+     	</nav>
 
-			<div id="submit">
-				<span>
-					<div id="search_input">
-						<input type="text" placeholder="Search" size="100">
-					</div>
-					<input type="submit" value="Search!">
-				</span>
-			</div>
+    <!-- Main section -->
 
-			<div class="in_one_line">
-				<div>
-					<a href="#">Subir</a>
-				</div>
-				<div class="separation">
-					<a href="#">Descargar</a>
-				</div>
-			</div>
-		</div>
+	   <div class="video_conteiner">
+       <main>
+		     <div id="video_player">
+			     <iframe width="900" height="600" src="https://www.youtube.com/embed/Qo4JIT8jMtI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			     <h1>Mountain Rain & Thunderstorm Sleep Sounds - Ambient Noise For Sleep & Meditation, @Ultizzz day#36</h1>
+			     <br/>
+           <div class="views_and_likes">
+             <div class="views">
+               <h3>6.618.848 Views</h3>
+             </div>
+             <div class="likes">
+                <img src="img/like_button.png" alt="Sorry... :(">
+                <img src="img/dislike_button.png" alt="Sorry... :(">
+                <img src="img/share_button.png" alt="Sorry... :(">
+                <img src="img/save_button.png" alt="Sorry... :(">
+                <img src="img/dots_button.png" alt="Sorry... :(">
+              </div>
+           </div>
+            <div class="upload_user">
+              <div class="inline">
+                <img src="img/profile_icon.png" alt="Sorry... :(">
+                <h4>Channel Name<span class="block">Published on Jun 8, 2017</span></h4>
+              </div>
+              <div>
+                <img class="subscribe" src="img/subscribe_button.png" alt="">
+              </div>
+            </div>
+            <p id="description">
+              Mountain Rain & Thunderstorm Sleep Sounds- Hiking to a Mountain top can
+              be a great thing. The rush one gets when finishing such an arduous task
+              is amazing. While this is the upside the down side is how tiring it can
+              be. Now imagine making it up a mountain after a tiring hike and out o
+              <span class="block">Show Less</span>
+            </p>
 
-		<!-- Video conteiner -->
-		<div class="video_conteiner">
-			<div id="video_player">
-				<iframe width="1024px" height="576.06px" src="https://www.youtube.com/embed/osSJhXruEzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h1>Title</h1>
-				<div class="">
-					<input type="text" placeholder="Enter your comment...">
-					<br></br>
-				</div>
-				<div class="comment">
-					<article>
-						<img src="youtube_logo.png" alt="Not found" width="30" height="21.5px">
-						<h3>Comments: </h3>
-						<p>This is a the first comment</p>
-					</article>
-				</div>
-			</div>
+			      <div class="comment">
+              <div class="inline">
+                <img src="img/profile_icon.png" alt="Not found" class="profile_icon">
+                <div class="coment_input">
+      		        <input type="text" placeholder="Enter your comment..."/>
+      		      </div>
+              </div>
+            </div>
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
 
-			<div id="recommended">
-				<img src="youtube_logo.png" alt="image not found" class="same_size_img">
-				<img src="youtube_logo.png" alt="image not found" class="same_size_img">
-				<img src="youtube_logo.png" alt="image not found" class="same_size_img">
-			</div>
-		</div>
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
 
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
 
-	</body>
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
+
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
+
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
+
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
+
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
+
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
+
+            <div class="inline">
+              <img src="img/profile_icon.png" alt="Not found" class="profile_icon"/>
+              <div class="comments">
+                <h4>Chill Droid <span>9 months ago</span></h4>
+  					    <p class="comment_text">Iron Man is the ranged player, thor is the heavy hitter/tank player that's slow but can pack a punch, and Captain America is the quick/up-close combo player. Literally how online rpg payers will see this fight as.</p>
+              </div>
+            </div>
+ 	      </div>
+      </main>
+    </div>
+
+    <div id="recommended">
+      <h3>Up next</h3>
+  	  <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+  	  <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+  	  <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+  	  <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+     	<img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+    	<img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+  	  <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+	    <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+	    <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+  	  <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+      <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+    	<img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+    	<img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+    	<img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+  	  <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+      <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+      <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+      <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+		  <img src="img/recommended_1.png" alt="image not found" class="same_size_img"/>
+	  </div>
+  </div>
+</body>
 </html>
