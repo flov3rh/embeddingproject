@@ -140,7 +140,7 @@ li {
   margin-top: 5px;
 }
 
-.main_section {
+.flex_container {
   display: flex;
   flex-direction: row;
 }
